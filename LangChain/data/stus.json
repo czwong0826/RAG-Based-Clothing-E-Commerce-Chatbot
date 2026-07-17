@@ -1,0 +1,5 @@
+[
+    {"name": "Alice", "age": 30, "hobby": ["reading","cooking"], "other": {"city": "New York", "job": "Engineer"}},
+    {"name": "Bob", "age": 25, "hobby": ["sports","music"], "other": {"city": "Los Angeles", "job": "Designer"}},
+    {"name": "Charlie", "age": 35, "hobby": ["traveling","photography"], "other": {"city": "Chicago", "job": "Writer"}}
+] 
