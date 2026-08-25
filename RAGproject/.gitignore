@@ -1,0 +1,25 @@
+# Secrets
+.env
+
+# Vector database (generated, contains all uploaded knowledge-base content)
+chroma_db/
+
+# MD5 hashes of previously uploaded files (generated at runtime)
+md5.text
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Streamlit
+.streamlit/
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+.idea/
