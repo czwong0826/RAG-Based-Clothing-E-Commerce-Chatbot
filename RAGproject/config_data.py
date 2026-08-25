@@ -1,6 +1,11 @@
 from pathlib import Path
+import os
+from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent
+load_dotenv(BASE_DIR / ".env")
+
+google_api_key = os.getenv("GOOGLE_API_KEY")
 
 md5_path = str(BASE_DIR / "md5.text")
 

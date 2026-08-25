@@ -1,5 +1,5 @@
 from operator import itemgetter
-
+import config_data as config
 from langchain_core.documents import Document
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
@@ -21,7 +21,7 @@ class RagService(object):
         self.vecotr_service = VectorStoreService(
             embedding_model=GoogleGenerativeAIEmbeddings(
                 model="models/gemini-embedding-2",
-                google_api_key="AIzaSyBJ1QzyW8xDxN995h9IsXM48n9RY3eNP2s"
+                google_api_key=config.google_api_key
             )
         )
 
@@ -37,7 +37,7 @@ class RagService(object):
 
         self.chat_model = ChatGoogleGenerativeAI(
             model="models/gemini-2.5-flash",
-            google_api_key="AIzaSyBJ1QzyW8xDxN995h9IsXM48n9RY3eNP2s"
+            google_api_key=config.google_api_key
         )
 
         self.chain = self.__get_chain()

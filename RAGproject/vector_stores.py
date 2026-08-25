@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     retriever = VectorStoreService(GoogleGenerativeAIEmbeddings(
     model = "gemini-2.5-flash",
-    google_api_key = "AIzaSyBJ1QzyW8xDxN995h9IsXM48n9RY3eNP2s"
+    google_api_key=config.google_api_key
     )).get_retriever()
 
     res = retriever.invoke("My skin looks warm, which color should I choose? Briefly answer.")

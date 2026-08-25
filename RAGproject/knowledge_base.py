@@ -41,7 +41,7 @@ class KnowledgeBaseService(object):
             collection_name=config.collection_name,
             embedding_function=GoogleGenerativeAIEmbeddings(
                 model="models/gemini-embedding-2",
-                google_api_key="AIzaSyBJ1QzyW8xDxN995h9IsXM48n9RY3eNP2s"
+                google_api_key=config.google_api_key
             ),
             persist_directory=config.persist_directory
         ) 
